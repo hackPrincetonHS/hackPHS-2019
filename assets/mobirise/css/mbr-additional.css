@@ -1027,6 +1027,7 @@ pre {
   -ms-flex-item-align: start;
   align-self: flex-start;
   padding: 0.25rem 0.75rem;
+  margin-right: 20%;
   font-size: 1.25rem;
   line-height: 1;
   background: transparent;
