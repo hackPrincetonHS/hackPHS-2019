@@ -2956,3 +2956,7 @@ body {
   height: 600px;
   width: auto!important;
 }
+
+.sortable-handler {
+  touch-action: none;
+}
