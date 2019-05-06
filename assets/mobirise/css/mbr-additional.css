@@ -2952,9 +2952,8 @@ body {
 }
 
 .img-stupid{
-/*  width: 100%;*/
-  height: 600px;
-  width: auto!important;
+  width: 80vw!important;
+  height: 52.4vw;
 }
 
 .sortable-handler {
