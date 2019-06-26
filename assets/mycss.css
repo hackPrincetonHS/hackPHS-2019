@@ -1,0 +1,8 @@
+.welcome-div{
+  height:600px;
+  background-image: linear-gradient(rgba(35, 35, 35, 0.8), rgba(35, 35, 35, 0.8)), url("img/stickers.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
