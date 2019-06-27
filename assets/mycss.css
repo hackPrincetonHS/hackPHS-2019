@@ -79,6 +79,8 @@
   font-size:3.75rem;
   /*display:inline-block;*/
 }
+
+
 .section{
   padding-top: 30px;
   padding-bottom:30px;
@@ -88,6 +90,17 @@
   background-color: #6BB9F0;
   font-family: 'Roboto', sans-serif;
 }
+.section-cta{
+  background-color: #f9ca24;
+}
+.section-faq {
+  background-color: #b19cd9;
+}
+.section-logistics{
+  background-color: #6ab04c;
+}
+
+
 @media (max-width: 600px) {
     .text-resize {
       font-size: 10vw;
@@ -100,16 +113,11 @@
   padding-bottom: 0.75rem;
   font-size: 2rem;
 }
-.section-cta{
-  background-color: #f9ca24;
-}
+
 .spread-elements {
   display: flex;
   justify-content: space-between;
   width:100%;
-}
-.section-faq {
-  background-color: #b19cd9;
 }
 .section-header{
   font-family: 'Rubik', sans-serif;
