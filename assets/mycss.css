@@ -93,11 +93,13 @@
   padding-bottom: 0.75rem;
   font-size: 2rem;
 }
-.section-cta h4{
-
-  display:inline-block;
+.section-cta{
+  background-color: #f9ca24;
 }
 .inner-cta {
   display: flex;
   justify-content: space-between;
+}
+.section-faq {
+
 }
