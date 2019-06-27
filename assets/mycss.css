@@ -17,10 +17,6 @@
   font-size: 4.25rem;
   /*padding-bottom: 1rem;*/
 }
-.welcome-message{
-  padding-top: 3.25rem;
-  padding-bottom: 2rem;
-}
 @media (min-width: 768px) {
   .welcome-img{
     padding-left: 25px;
@@ -47,5 +43,32 @@
   text-decoration: none;
 }
 .welcome-btn{
+  padding-top: 100px;
   padding-bottom: 50px;
+}
+.navbar-div{
+  padding-right: calc(10% + 35px);
+}
+@media (min-width: 1000px) {
+  .navbar-div{
+    padding-right: 130px;
+  }
+}
+@media (min-width: 1050px) {
+  .navbar-div{
+    padding-right: 135px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-div{
+    padding-right: 92px;
+  }
+}
+@media(max-width: 397px) {
+  .navbar-div{
+    display: none;
+  }
+  .custom-navbar-brand {
+    justify-content: start;
+  }
 }
