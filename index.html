@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Required meta tags -->
@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik|Roboto|Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/mycss.css">
-  <title>Hello, world!</title>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </head>
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:30px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
 <body>
@@ -52,21 +53,21 @@
   <div class="welcome-div">
     <div class="container">
       <div class="row">
-          <div class="col-md-6">
-            <div class="welcome text-md-left text-center">
-              <h1 class="text-light welcome-header">hackPHS 2019</h1>
-              <h4 class="text-light">November 2nd-3rd</h4>
-              <div class="welcome-btn">
-                <button class="btn btn-round" type="button">Register Now!</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 order-first order-md-2">
-            <div class="welcome welcome-img">
-              <img src="assets/img/hackphslogo2019.svg" width ="100%" alt="hackPHS">
+        <div class="col-md-6">
+          <div class="welcome text-md-left text-center">
+            <h1 class="text-light welcome-header">hackPHS 2019</h1>
+            <h4 class="text-light">November 2nd-3rd</h4>
+            <div class="welcome-btn">
+              <button class="btn btn-round" type="button">Register Now!</button>
             </div>
           </div>
         </div>
+        <div class="col-md-6 order-first order-md-2">
+          <div class="welcome welcome-img">
+            <img src="assets/img/hackphslogo2019.svg" width ="100%" alt="hackPHS">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="section section-about" id="about">
@@ -84,59 +85,65 @@
   </div>
   <div class="section section-cta">
     <div class="container">
-      <div class=inner-cta>
-        <h1 class="text-left display-4">What are you waiting for?</h1>
-        <button class="btn btn-round" type="button">Register Now!</button>
+      <div class="justify-content-center row justify-content-lg-between">
+        <h1 class="text-center text-lg-left display-4 text-resize">What are you waiting for?</h1>
+        <button class="btn btn-round btn-text-resize" type="button">Register Now!</button>
       </div>
     </div>
   </div>
   <div class="section section-faq" id="faq">
     <div class="container">
-      <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h5>
-    </div>
+      <div class="accordion" id="faqAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <div>When and where is hackPHS?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+            </button>
+          </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+            <div class="card-body">
+              hackPHS will be held in the cafeteria of Princeton High School, located at <a href="https://goo.gl/maps/kkXeczMvXWr">151 Moore St, Princeton, NJ</a>. Limited parking will be available around the school. <b>All dates and times are tentative</b>, but you should plan on arriving before <b>10:30 AM</b> on Saturday, November 2 and leaving sometime after <b>2:30 PM</b> on Sunday, November 3.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+              <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div>What recources will be provided?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+              </button>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+            <div class="card-body">
+              Free food and drinks will be provided during the hackathon, including vegetarian and dairy-free options. We will also have dedicated sleeping areas for y'all to catch some Z's. Electrical outlets will be available throughout the cafeteria for all your charging needs. We will have a hardware lab, but if you need specific hardware, either email us at team@hackphs.tech, or bring the hardware with you.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+              <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div>What should I bring?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+              </button>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+              <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <div>Who can attend this event?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+              </button>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+            <div class="card-body">
+              Unfortunately, this event is for high school students only. If you are no longer a high schooler and would like to help out, consider applying to be a mentor <a href="">here</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
     </div>
   </div>
 

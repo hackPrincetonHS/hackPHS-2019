@@ -88,7 +88,14 @@
   background-color: #6BB9F0;
   font-family: 'Roboto', sans-serif;
 }
-
+@media (max-width: 600px) {
+    .text-resize {
+      font-size: 10vw;
+    }
+    .btn-text-resize {
+      font-size: 5vw;
+    }
+}
 .section h4{
   padding-bottom: 0.75rem;
   font-size: 2rem;
@@ -96,9 +103,10 @@
 .section-cta{
   background-color: #f9ca24;
 }
-.inner-cta {
+.spread-elements {
   display: flex;
   justify-content: space-between;
+  width:100%;
 }
 .section-faq {
 
