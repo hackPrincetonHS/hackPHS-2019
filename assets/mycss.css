@@ -1,13 +1,15 @@
 .welcome-div{
-  height:600px;
+  min-height:600px;
   background-image: linear-gradient(rgba(35, 35, 35, 0.8), rgba(35, 35, 35, 0.8)), url("img/stickers.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
 }
 .welcome{
   padding-top: 25px;
+  font-family: 'Roboto', sans-serif;
 }
 .welcome-header{
   padding-top: 5px;
@@ -15,9 +17,9 @@
   font-size: 4.25rem;
   /*padding-bottom: 1rem;*/
 }
-.welcome-date{
-  padding-bottom: 3rem;
-  font-family: 'Roboto', sans-serif;
+.welcome-message{
+  padding-top: 3.25rem;
+  padding-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .welcome-img{
@@ -26,4 +28,24 @@
 }
 .welcome-img{
   padding-top: 25px;
+}
+.btn-round {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  background: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  padding: 15px 30px;
+}
+
+.btn-round:hover {
+  background: #0062CC;
+  text-decoration: none;
+}
+.welcome-btn{
+  padding-bottom: 50px;
 }
