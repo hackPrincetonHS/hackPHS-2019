@@ -17,8 +17,13 @@
 }
 .welcome-date{
   padding-bottom: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 768px) {
+  .welcome-img{
+    padding-left: 25px;
+  }
 }
 .welcome-img{
   padding-top: 25px;
-  padding-left: 25px;
 }
