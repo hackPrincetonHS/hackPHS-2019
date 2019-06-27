@@ -40,6 +40,7 @@
 
 .btn-round:hover {
   background: #0062CC;
+  color: white;
   text-decoration: none;
 }
 .welcome-btn{
