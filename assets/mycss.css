@@ -109,5 +109,10 @@
   width:100%;
 }
 .section-faq {
-
+  background-color: #b19cd9;
+}
+.section-header{
+  font-family: 'Rubik', sans-serif;
+  font-size:3.75rem;
+  padding-bottom: 20px;
 }
