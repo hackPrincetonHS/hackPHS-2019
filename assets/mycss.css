@@ -97,6 +97,61 @@ html {
   /*display:inline-block;*/
 }
 
+/*--sponsors stuff--*/
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.sponsor-text{
+  font-family: 'Rubik', sans-serif;
+  font-size:3.75rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.sponsorDiv {
+  position: relative;
+  height: auto;
+  text-align: center;
+  padding: 50px;
+  padding-top: 25px;
+}
+
+.s-col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+}
+
+.sponsor-image-1 {
+  width: auto;
+  height: auto;
+  max-width: 480px;
+  max-height: 240px;
+}
+.sponsor-image-2 {
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
+@media(max-width: 800px){
+  .sponsor-image-1{
+    max-width: 75%;
+  }
+  .sponsor-image-2{
+    max-width: 100%;
+  }
+}
+
+/*end sponsos stuff*/
 .section-about {
   padding-top: 50px;
   background-color: #6BB9F0;
@@ -111,7 +166,11 @@ html {
 .section-logistics{
   background-color: #2C2A4A;
 }
-
+.section-sponsors{
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #FFFFFF;
+}
 
 @media (max-width: 600px) {
     .text-resize {
@@ -136,6 +195,9 @@ html {
   font-size:3.75rem;
   padding-bottom: 20px;
 }
+
+
+
 footer {
   padding: 25px 0;
   text-align: center;
