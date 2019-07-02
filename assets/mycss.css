@@ -106,51 +106,61 @@ html {
   flex-wrap: wrap;
   margin-right: 15px;
   margin-left: 15px;
+  padding-bottom: 25px;
 }
-
+/*
 .sponsor-text{
   font-family: 'Rubik', sans-serif;
-  font-size:3.75rem;
-  padding-left: 15%;
-  padding-right: 15%;
+  font-size:3rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-
+*/
 .sponsorDiv {
   position: relative;
   height: auto;
   text-align: center;
-  padding: 50px;
-  padding-top: 25px;
+  padding: 10px;
 }
 
 .s-col {
   float: left;
   width: 50%;
   margin: auto;
-  padding: 25px;
+  padding: 20px;
+  min-height: 100px;
 }
 
 .sponsor-image-1 {
   width: auto;
   height: auto;
-  max-width: 480px;
-  max-height: 240px;
+  max-width: 450px;
+  max-height: 225px;
 }
 .sponsor-image-2 {
   width: auto;
   height: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 225px;
+  max-height: 175px;
 }
+
 @media(max-width: 800px){
   .sponsor-image-1{
-    max-width: 75%;
+    max-width: 80%;
+    max-height: 120px;
   }
   .sponsor-image-2{
     max-width: 100%;
   }
 }
-
+@media(max-width: 600px){
+  .l{
+    padding-left: 10px;
+  }
+  .r{
+    padding-right: 10px;*/
+  }
+}
 /*end sponsos stuff*/
 .section-about {
   padding-top: 50px;
@@ -167,8 +177,8 @@ html {
   background-color: #2C2A4A;
 }
 .section-sponsors{
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #FFFFFF;
 }
 
