@@ -120,7 +120,6 @@ html {
   position: relative;
   height: auto;
   text-align: center;
-  padding: 10px;
 }
 
 .s-col {
@@ -140,7 +139,7 @@ html {
 .sponsor-image-2 {
   width: auto;
   height: auto;
-  max-width: 225px;
+  max-width: 275px;
   max-height: 175px;
 }
 
