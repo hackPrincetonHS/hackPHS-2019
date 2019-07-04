@@ -130,12 +130,17 @@ html {
   min-height: 100px;
 }
 
+.s-1{
+  margin-right: 20%;
+  margin-left: 20%
+}
 .sponsor-image-1 {
   width: auto;
   height: auto;
   max-width: 450px;
   max-height: 225px;
 }
+
 .sponsor-image-2 {
   width: auto;
   height: auto;
@@ -145,11 +150,11 @@ html {
 
 @media(max-width: 800px){
   .sponsor-image-1{
-    max-width: 80%;
-    max-height: 120px;
+    max-width: 65.217391304%;
+    /*max-height: 120px;*/
   }
   .sponsor-image-2{
-    max-width: 100%;
+    max-width: 79.710144927%;
   }
 }
 @media(max-width: 600px){
