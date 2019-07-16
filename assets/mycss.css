@@ -236,3 +236,11 @@ footer ul li a {
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
   text-decoration: none;
 }
+.carousel-winners{
+    padding-top: 50px;
+    background-color: #f9ca24;
+}
+.carousel-other{
+    padding-top: 50px;
+    background-color: #6BB9F0;
+}
