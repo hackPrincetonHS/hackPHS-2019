@@ -19,29 +19,31 @@
 
   <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:30px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-navbar-brand">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top custom-navbar-brand">
+    <a class="navbar-brand" href="/">
       <img src="assets/img/hackphslogo2019.svg" width="65" alt="hackPHS">
     </a>
-    <a class="navbar-brand" href="#">hackPHS</a>
+    <a class="navbar-brand custom-brand" href="/">hackPHS</a>
+    <div></div>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
         <li class="nav-item">
           <a class="nav-link" href="">Clipboard<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-mmd-none">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-mmd-none">
           <a class="nav-link" href="#faq">FAQ</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-mmd-none">
           <a class="nav-link" href="#schedule">Schedule</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-mmd-none">
           <a class="nav-link disabled" href="#sponsors">Sponsors</a>
         </li>
         <li class="nav-item">
@@ -53,7 +55,12 @@
       </ul>
     </div>
     <form class="form-inline my-2 my-md-0 navbar-div" id="regbuttonnav">
-      <button class="btn btn-outline-light" type="button">Register</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="register-button">
+        <button class="btn btn-outline-light" type="button">Register</button>
+      </div>
     </form>
   </nav>
   <div class="welcome-div">
@@ -431,6 +438,45 @@
   </div>
 </div>
 <footer>
+  <div id="maindiv" onmouseover="document.getElementById('div1').style.animationPlayState='paused';document.getElementById('div2').style.animationPlayState='paused';" onmouseout="document.getElementById('div1').style.animationPlayState='running';document.getElementById('div2').style.animationPlayState='running';">
+    <div id="div1">
+      <div id="whole-row" class="passthrough">
+        <div id="copy-heads" class="passthrough">
+          <img class="person-head" src="assets/img/people/headshots/AndrewYan.png">
+          <img class="person-head" src="assets/img/people/headshots/AuroraYan.png">
+          <img class="person-head" src="assets/img/people/headshots/CharlieLuo.png">
+          <img class="person-head" src="assets/img/people/headshots/ChrisShen.png">
+          <img class="person-head" src="assets/img/people/headshots/GillianBartels.png">
+          <img class="person-head" src="assets/img/people/headshots/JoannShi.png">
+          <img class="person-head" src="assets/img/people/headshots/JonathonChen.png">
+          <img class="person-head" src="assets/img/people/headshots/LincolnRoth.png">
+          <img class="person-head" src="assets/img/people/headshots/MoriahEley.png">
+          <img class="person-head" src="assets/img/people/headshots/RaymondLi.png">
+          <img class="person-head" src="assets/img/people/headshots/RiaSharma.png">
+          <img class="person-head" src="assets/img/people/headshots/ShravyaNandyala.png">
+          <img class="person-head" src="assets/img/people/headshots/StephaneMorel.png">
+        </div>
+      </div>
+      <script>
+      $('#copy-heads').clone().appendTo($('#whole-row'));
+      </script>
+    </div>
+    <div id="div2">
+    </div>
+    <script>
+    $('#whole-row').clone().appendTo($('#div2'));
+    </script>
+    <script>
+    var el1 = document.getElementById('div1');
+    var el2 = document.getElementById('div2');
+    el1.style.animation = 'none';
+    el2.style.animation = 'none';
+    el1.offsetHeight; /* trigger reflow */
+    el2.offsetHeight; /* trigger reflow */
+    el1.style.animation = null;
+    el2.style.animation = null;
+    </script>
+  </div>
   <div class="container">
     <a href="mailto:team@hackphs.tech">Questions? Contact us!</a><br>
 
@@ -458,7 +504,6 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
