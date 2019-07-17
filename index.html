@@ -460,7 +460,12 @@
         </div>
       </div>
       <script>
-      $('#copy-heads').clone().appendTo($('#whole-row'));
+      //use jquery for deep clone
+      var singleCopyHeads=$('#copy-heads');
+      var windowwidth=$(window).width();
+      for(var i=1; i<Math.floor(windowwidth/singleCopyHeads.width())+1;i++){
+        singleCopyHeads.clone().appendTo($('#whole-row'));
+      }
       </script>
     </div>
     <div id="div2">
@@ -469,16 +474,50 @@
     $('#whole-row').clone().appendTo($('#div2'));
     </script>
     <script>
+    var singlecopywidth=$('#copy-heads').width();
+    var windowwidth=$(window).width();
     var el1 = document.getElementById('div1');
     var el2 = document.getElementById('div2');
+    console.log("animation-duration:"+Math.max(Math.floor(windowwidth/singlecopywidth),1)*20+"s");
     el1.style.animation = 'none';
     el2.style.animation = 'none';
     el1.offsetHeight; /* trigger reflow */
     el2.offsetHeight; /* trigger reflow */
-    el1.style.animation = null;
-    el2.style.animation = null;
+    el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
+    el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
     </script>
   </div>
+  <script>
+  //now make all of it happen sequentially on window resize
+  window.addEventListener("resize", function(){
+    var singlecopywidth=$('#copy-heads').width();
+    var windowwidth=$(window).width();
+    if($('#whole-row').children().length!=Math.floor(windowwidth/singlecopywidth)+1){
+      var singleCopyHeads=$('#copy-heads');
+      var singleCopyHeadsClone=singleCopyHeads.clone();
+      $("#whole-row").empty();
+      $("#div2").empty();
+
+      singleCopyHeadsClone.appendTo($('#whole-row'));
+      for(var i=1; i<Math.floor(windowwidth/singlecopywidth)+1;i++){
+        singleCopyHeads.clone().appendTo($('#whole-row'));
+      }
+      $('#whole-row').clone().appendTo($('#div2'));
+
+      var el1 = document.getElementById('div1');
+      var el2 = document.getElementById('div2');
+
+      el1.offsetHeight; /* trigger reflow */
+      el2.offsetHeight; /* trigger reflow */
+      el1.style.animation = 'none';
+      el2.style.animation = 'none';
+      el1.offsetHeight; /* trigger reflow */
+      el2.offsetHeight; /* trigger reflow */
+      el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
+      el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
+    }
+  });
+  </script>
   <div class="container">
     <a href="mailto:team@hackphs.tech">Questions? Contact us!</a><br>
 
