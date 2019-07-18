@@ -438,87 +438,39 @@
     </div>
   </div>
 </div>
+</body>
 <footer>
   <!-- yes, I build this myself, yes, i know it's amazing, thank you-->
   <div id="maindiv" onmouseover="document.getElementById('div1').style.animationPlayState='paused';document.getElementById('div2').style.animationPlayState='paused';" onmouseout="document.getElementById('div1').style.animationPlayState='running';document.getElementById('div2').style.animationPlayState='running';">
     <div id="div1">
       <div id="whole-row" class="passthrough">
         <div id="copy-heads" class="passthrough">
-          <img class="person-head" src="assets/img/people/headshots/tiny/AndrewYan.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/AuroraYan.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/CharlieLuo.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/ChrisShen.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/GillianBartelsQuansah.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/JoannShi.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/JonathanChen.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/LincolnRoth.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/MoriahEley.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/RaymondLi.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/RiaSharma.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/ShravyaNandyala.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/StephaneMorel.jpg">
-          <img class="person-head" src="assets/img/people/headshots/tiny/AlanGu.jpg">
+          <img class="person-head" src="assets/img/people/headshots/tiny/AlanGu.jpg" replacable="assets/img/people/headshots/AlanGu.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/AndrewYan.jpg" replacable="assets/img/people/headshots/AndrewYan.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/AnnaEaton.jpg" replacable="assets/img/people/headshots/AnnaEaton.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/AnnaLieb.jpg" replacable="assets/img/people/headshots/AnnaLieb.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/AuroraYan.jpg" replacable="assets/img/people/headshots/AuroraYan.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/CharlieLuo.jpg" replacable="assets/img/people/headshots/CharlieLuo.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/ChrisShen.jpg" replacable="assets/img/people/headshots/ChrisShen.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/GillianBartelsQuansah.jpg" replacable="assets/img/people/headshots/GillianBartelsQuansah.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/JoannShi.jpg" replacable="assets/img/people/headshots/JoannShi.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/JonathanChen.jpg" replacable="assets/img/people/headshots/JonathanChen.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/KimberlyCheng.jpg" replacable="assets/img/people/headshots/KimberlyCheng.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/LincolnRoth.jpg" replacable="assets/img/people/headshots/LincolnRoth.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/MoriahEley.jpg" replacable="assets/img/people/headshots/MoriahEley.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/NathalieVerlinde.jpg" replacable="assets/img/people/headshots/NathalieVerlinde.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/PhillipYan.jpg" replacable="assets/img/people/headshots/PhillipYan.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/RaymondLi.jpg" replacable="assets/img/people/headshots/RaymondLi.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/RiaSharma.jpg" replacable="assets/img/people/headshots/RiaSharma.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/ShravyaNandyala.jpg" replacable="assets/img/people/headshots/ShravyaNandyala.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/SophiaTeng.jpg" replacable="assets/img/people/headshots/SophiaTeng.png">
+          <img class="person-head" src="assets/img/people/headshots/tiny/StephaneMorel.jpg" replacable="assets/img/people/headshots/StephaneMorel.png">
         </div>
       </div>
-      <script>
-      //use jquery for deep clone
-      var singleCopyHeads=$('#copy-heads');
-      var windowwidth=$(window).width();
-      for(var i=1; i<Math.floor(windowwidth/singleCopyHeads.width())+1;i++){
-        singleCopyHeads.clone().appendTo($('#whole-row'));
-      }
-      </script>
     </div>
     <div id="div2">
     </div>
-    <script>
-    $('#whole-row').clone().appendTo($('#div2'));
-    </script>
-    <script>
-    var singlecopywidth=$('#copy-heads').width();
-    var windowwidth=$(window).width();
-    var el1 = document.getElementById('div1');
-    var el2 = document.getElementById('div2');
-    console.log("animation-duration:"+Math.max(Math.floor(windowwidth/singlecopywidth),1)*20+"s");
-    el1.style.animation = 'none';
-    el2.style.animation = 'none';
-    el1.offsetHeight; /* trigger reflow */
-    el2.offsetHeight; /* trigger reflow */
-    el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
-    el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
-    </script>
   </div>
-  <script>
-  //now make all of it happen sequentially on window resize
-  window.addEventListener("resize", function(){
-    var singlecopywidth=$('#copy-heads').width();
-    var windowwidth=$(window).width();
-    if($('#whole-row').children().length!=Math.floor(windowwidth/singlecopywidth)+1){
-      var singleCopyHeads=$('#copy-heads');
-      var singleCopyHeadsClone=singleCopyHeads.clone();
-      $("#whole-row").empty();
-      $("#div2").empty();
-
-      singleCopyHeadsClone.appendTo($('#whole-row'));
-      for(var i=1; i<Math.floor(windowwidth/singlecopywidth)+1;i++){
-        singleCopyHeads.clone().appendTo($('#whole-row'));
-      }
-      $('#whole-row').clone().appendTo($('#div2'));
-
-      var el1 = document.getElementById('div1');
-      var el2 = document.getElementById('div2');
-
-      el1.offsetHeight; /* trigger reflow */
-      el2.offsetHeight; /* trigger reflow */
-      el1.style.animation = 'none';
-      el2.style.animation = 'none';
-      el1.offsetHeight; /* trigger reflow */
-      el2.offsetHeight; /* trigger reflow */
-      el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
-      el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
-    }
-  });
-  </script>
   <div class="container">
     <a href="mailto:team@hackphs.tech">Questions? Contact us!</a><br>
 
@@ -540,8 +492,95 @@
     </li> -->
   </ul>
 </div>
-</body>
 </footer>
+<script>
+//so that the small images aren't garbage collected each time
+let smallImages=[]
+//these are the big images
+let replacableImages=[]
+
+let replaceReplacable=function(originalsrc, replacablesrc){
+  var a="img[src='"+"assets"+originalsrc.split("assets").pop()+"']";
+  $(a).attr("src", replacablesrc);
+}
+
+let replaceReplacables=function(){
+  for(var i=0; i<replacableImages.length; i++){
+    if(replacableImages[index].loaded){
+      replaceReplacable(smallImages[i].src, replacableImages[i].src);
+    }
+  }
+}
+
+$('img[replacable]').each(function(index) {
+  smallImages[index]=new Image();
+  smallImages[index].src=($(this).attr("src"));
+  replacableImages[index]=new Image();
+  replacableImages[index].src=($(this).attr("replacable"));
+  replacableImages[index].onload=function(){
+    replacableImages[index].loaded=true;
+    replaceReplacable(smallImages[index].src, replacableImages[index].src)
+  }
+});
+</script>
+
+
+<script>
+//part 1, copy copyheads as many times as needed
+var singleCopyHeads=$('#copy-heads');
+var windowwidth=$(window).width();
+for(var i=1; i<Math.floor(windowwidth/singleCopyHeads.width())+1;i++){
+  singleCopyHeads.clone().appendTo($('#whole-row'));
+}
+
+//part 2, copy it into div2, so that we can loop it
+$('#whole-row').clone().appendTo($('#div2'));
+
+//part 3, reload all the animations so that they're synced and also set the animation speed so that it's always the same
+var singlecopywidth=$('#copy-heads').width();
+var el1 = document.getElementById('div1');
+var el2 = document.getElementById('div2');
+console.log("animation-duration:"+Math.max(Math.floor(windowwidth/singlecopywidth),1)*20+"s");
+el1.style.animation = 'none';
+el2.style.animation = 'none';
+el1.offsetHeight; /* trigger reflow */
+el2.offsetHeight; /* trigger reflow */
+el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
+el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
+
+//now make all of it happen together on window resize
+window.addEventListener("resize", function(){
+  var singlecopywidth=$('#copy-heads').width();
+  var windowwidth=$(window).width();
+  if($('#whole-row').children().length!=Math.floor(windowwidth/singlecopywidth)+1){
+    var singleCopyHeads=$('#copy-heads');
+    var singleCopyHeadsClone=singleCopyHeads.clone();
+    $("#whole-row").empty();
+    $("#div2").empty();
+
+    singleCopyHeadsClone.appendTo($('#whole-row'));
+    for(var i=1; i<Math.floor(windowwidth/singlecopywidth)+1;i++){
+      singleCopyHeads.clone().appendTo($('#whole-row'));
+    }
+    $('#whole-row').clone().appendTo($('#div2'));
+
+    var el1 = document.getElementById('div1');
+    var el2 = document.getElementById('div2');
+
+    el1.offsetHeight; /* trigger reflow */
+    el2.offsetHeight; /* trigger reflow */
+    el1.style.animation = 'none';
+    el2.style.animation = 'none';
+    el1.offsetHeight; /* trigger reflow */
+    el2.offsetHeight; /* trigger reflow */
+    el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
+    el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
+
+    //replaceReplacables();
+  }
+});
+</script>
+
 
 
 <!-- Optional JavaScript -->
