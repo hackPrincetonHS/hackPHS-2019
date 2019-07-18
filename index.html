@@ -498,20 +498,6 @@
 let smallImages=[]
 //these are the big images
 let replacableImages=[]
-
-let replaceReplacable=function(originalsrc, replacablesrc){
-  var a="img[src='"+"assets"+originalsrc.split("assets").pop()+"']";
-  $(a).attr("src", replacablesrc);
-}
-
-let replaceReplacables=function(){
-  for(var i=0; i<replacableImages.length; i++){
-    if(replacableImages[index].loaded){
-      replaceReplacable(smallImages[i].src, replacableImages[i].src);
-    }
-  }
-}
-
 $('img[replacable]').each(function(index) {
   smallImages[index]=new Image();
   smallImages[index].src=($(this).attr("src"));
@@ -519,7 +505,8 @@ $('img[replacable]').each(function(index) {
   replacableImages[index].src=($(this).attr("replacable"));
   replacableImages[index].onload=function(){
     replacableImages[index].loaded=true;
-    replaceReplacable(smallImages[index].src, replacableImages[index].src)
+    var a="img[src='assets"+smallImages[index].src.split("assets").pop()+"']";
+    $(a).attr("src", replacableImages[index].src);
   }
 });
 </script>
@@ -558,6 +545,7 @@ window.addEventListener("resize", function(){
     $("#whole-row").empty();
     $("#div2").empty();
 
+    //the clone will take the big image if it's loaded, and if only the small image is loaded, then when the big image loads it will be replaced
     singleCopyHeadsClone.appendTo($('#whole-row'));
     for(var i=1; i<Math.floor(windowwidth/singlecopywidth)+1;i++){
       singleCopyHeads.clone().appendTo($('#whole-row'));
@@ -575,8 +563,6 @@ window.addEventListener("resize", function(){
     el2.offsetHeight; /* trigger reflow */
     el1.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s";
     el2.style="animation-duration:"+((Math.floor(windowwidth/singlecopywidth)+1)*20)+"s; "+"animation-delay:-"+((Math.floor(windowwidth/singlecopywidth)+1)*10).toString()+"s";
-
-    //replaceReplacables();
   }
 });
 </script>
