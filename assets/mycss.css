@@ -107,7 +107,7 @@ html {
   flex-wrap: wrap;
   margin-right: 15px;
   margin-left: 15px;
-  padding-bottom: 25px;
+  padding: 10px;
 }
 /*
 .sponsor-text{
@@ -258,6 +258,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 #maindiv{
   display: flex;
   overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 
@@ -297,6 +299,37 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   margin: 0px 5px;
   border-radius: 25px
 }
+
+
 .passthrough{
   display:inherit;
+}
+
+/*testing some popup stuff*/
+
+div.active {
+  display: block;
+}
+div.inactive{
+  display: none;
+}
+
+.profilepics {
+  max-width: 200px;
+  max-height: 200px;
+  padding-bottom: 10px;
+}
+
+.modal {
+    /* some styles to position the modal at the center of the page */
+
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
 }
