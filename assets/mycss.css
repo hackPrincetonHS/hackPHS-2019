@@ -350,7 +350,7 @@ div.inactive{
       box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
       background-color: #ffdb4b;
       max-height: 90%;
-      overflow-y: scroll;
+      overflow-y: auto;
   }
 }
 @media (min-width: 800px){
