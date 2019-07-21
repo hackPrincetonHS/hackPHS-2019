@@ -255,7 +255,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     display: none;
   }
 }
-#maindiv{
+#meettheteam{
   display: flex;
   overflow: hidden;
   padding-top: 10px;
@@ -333,7 +333,7 @@ div.inactive{
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
     background-color: #ffdb4b;
     max-height: 90%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 @media (min-width: 525px){
@@ -357,7 +357,8 @@ div.inactive{
   .modal {
       /* some styles to position the modal at the center of the page */
       top: 5%;
-      left: 25%;
+      left: 50%;
+      transform: translate(-50%, 0);
       width: 50%;
       height: auto;
       display: none;
@@ -367,6 +368,7 @@ div.inactive{
       box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
       background-color: #ffdb4b;
       max-height: 90%;
-      overflow-y: scroll;
+      overflow-y: auto;
+      max-width: 1170px;
   }
 }
