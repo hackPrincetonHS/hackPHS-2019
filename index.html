@@ -698,12 +698,11 @@ window.addEventListener("resize", function(){
 
 var hoverID = ['id',false]; //id , isHovering?
 var clicked = false;
-$( "img.person-head" ).hover(
+$( "img.person-head" ).mouseover(
   function() {
-    if (!clicked){
       hoverID[0] = $(this).attr('id');
-      hoverID[1]=!hoverID[1];
-      document.getElementById(hoverID[0] + "Popup").style.display = (hoverID[1]? "block": "none"); //change visibility
+      hoverID[1]=true;
+      document.getElementById(hoverID[0] + "Popup").style.display = "block"; //change visibility
     }
   }
 )
@@ -752,27 +751,6 @@ $('div').on('focusout', function () {
   $(this+"Popup").toggleClass('inactive').focus();
   clicked = false;
 });*/
-</script>
-
-<!-- resizing modal boxes for mobile -->
-<script>
-if (window.innerWidth <= 800) {
-  var x = document.getElementsByClassName("modal");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.width = "500px";
-    var s = (window.innerWidth-500)/2+"px";
-    x[i].style.left = s;
-  }
-}
-if (window.innerWidth <= 525) {
-  var x = document.getElementsByClassName("modal");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.width = "95%";
-    x[i].style.left = "2.5%";
-  }
-}
 </script>
 
 <!-- Optional JavaScript -->
