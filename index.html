@@ -21,7 +21,9 @@
   <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
+<!--
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:30px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+-->
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top custom-navbar-brand">
     <a class="navbar-brand" href="/">
@@ -32,7 +34,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="">Clipboard<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://clipboard.hackphs.tech/">Clipboard<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item d-mmd-none">
           <a class="nav-link" href="#about">About</a>
@@ -54,12 +56,13 @@
         </li>
       </ul>
     </div>
-    <form class="form-inline my-2 my-md-0 navbar-div" id="regbuttonnav">
+    <!--<form class="form-inline my-2 my-md-0 navbar-div" id="regbuttonnav"> -->
+    <form class="form-inline my-2 my-md-0" id="regbuttonnav">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="register-button">
-        <button class="btn btn-outline-light" type="button">Register</button>
+        <a class="btn btn-outline-light" href="https://clipboard.hackphs.tech/" role="button">Register</a>
       </div>
     </form>
   </nav>
@@ -71,7 +74,7 @@
             <h1 class="text-light welcome-header">hackPHS 2019</h1>
             <h4 class="text-light">November 2nd-3rd</h4>
             <div class="welcome-btn">
-              <button class="btn btn-round" type="button">Register Now!</button>
+              <a class="btn btn-round" href="https://clipboard.hackphs.tech/" role="button">Register Now!</a>
             </div>
           </div>
         </div>
@@ -101,7 +104,7 @@
     <div class="container">
       <div class="justify-content-center row justify-content-lg-between">
         <h1 class="text-center text-lg-left display-4 text-light text-resize">What are you waiting for?</h1>
-        <button class="btn btn-round btn-text-resize" type="button">Register Now!</button>
+        <button onclick="window.location.href = 'https://clipboard.hackphs.tech/';"  class="btn btn-round btn-text-resize" type="button">Register Now!</button>
       </div>
     </div>
   </div>
@@ -119,7 +122,7 @@
 
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
             <div class="card-body">
-              hackPHS will be held in the cafeteria of Princeton High School, located at <a href="https://goo.gl/maps/kkXeczMvXWr">151 Moore St, Princeton, NJ</a>. Limited parking will be available around the school. <b>All dates and times are tentative</b>, but you should plan on arriving before <b>10:30 AM</b> on Saturday, November 2 and leaving sometime after <b>2:30 PM</b> on Sunday, November 3.
+              hackPHS will be held in the cafeteria of Princeton High School, located at <a href="https://goo.gl/maps/kkXeczMvXWr">151 Moore St, Princeton, NJ</a>. Limited parking will be available around the school. <b>All times are tentative</b>, but you should plan on arriving before <b>10:30 AM</b> on Saturday, November 2 and leaving sometime after <b>2:30 PM</b> on Sunday, November 3.
             </div>
           </div>
         </div>
@@ -144,7 +147,7 @@
 
           <div id="collapseApply" class="collapse" aria-labelledby="headingApply" data-parent="#faqAccordion">
             <div class="card-body">
-              Apply by going to our registration link <a href="">here</a>! We will be doing admissions on a first-come first-serve basis, so apply ASAP.
+              Apply by going to our registration link <a href="https://clipboard.hackphs.tech/">here</a>! We will be doing admissions on a first-come first-serve basis, so apply ASAP.
             </div>
           </div>
         </div>
@@ -168,7 +171,7 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
             <div class="card-body">
-              Outreach can write this
+              Make sure you’re ready to spend 24 hours away from home. Basically, bring a sleeping bag, extra clothes, a toothbrush, and anything else you might need to feel comfortable for a long period of time. Also, please bring anything you need for your project such as a laptop, laptop charger, outlets, and hardware (we will have a hardware lab if you need anything else).
             </div>
           </div>
         </div>
@@ -180,7 +183,7 @@
           </div>
           <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
             <div class="card-body">
-              Teams of up to 4 people are highly encouraged (though not mandatory), but even if you don't have one beforehand, hackPHS will be a great way to meet other enthusiastic people and even make new friends. No matter if you're a first time hackathon attendee and have no idea what to do (everyone was a beginner once), or are an experienced hacker who wants to give back to the community, it is a good idea to join our Facebook event. In addition to all the important announcements and information about the event, you'll be able to find others to guide you through the hackathon process and hopefully help you develop something awesome.
+              Teams of up to 4 people are highly encouraged (though not mandatory), but even if you don't have one beforehand, we will be having a team building workshop: a great way to meet other enthusiastic people and even make new friends. No matter if you're a first time hackathon attendee and have no idea what to do (everyone was a beginner once), or are an experienced hacker who wants to give back to the community, it is a good idea to join our Facebook event. In addition to all the important announcements and information about the event, you'll be able to find others to guide you through the hackathon process and hopefully help you develop something awesome.
             </div>
           </div>
         </div>
@@ -238,10 +241,9 @@
   <div class="section section-logistics">
     <div class="nav-marker" id=schedule></div>
     <div class="container">
-      <h1 class="section-header text-center text-light">Schedule</h1>
-      <!--
-      <h4 class="text-center">Full schedule coming soon!</h4>
-    -->
+      <h1 class="section-header text-center text-light">Full schedule coming soon!</h1>
+
+<!--
     <table class="table table-dark">
       <thead>
         <tr>
@@ -333,108 +335,65 @@
         </tr>
       </tbody>
     </table>
+  -->
   </div>
 </div>
 <div class="section section-sponsors">
+  <!--
   <div class="nav-marker" id=sponsors></div>
   <h1 class="section-header text-center">Partners<hr></h1>
   <div class="row">
     <div class="col-md sponsorDiv">
       <a target-"_blank"="" href="https://mlh.io/">
-        <img class="sponsor-image-1" src="assets/img/lastYearSponsors/mlhLogo.png" alt="mlh">
+        <img class="sponsor-image-1" src="assets/img/sponsorLogos/mlhLogo.png" alt="mlh">
       </a>
     </div>
   </div>
+-->
   <h1 class="section-header text-center">2018 Sponsors<hr></h1>
   <div class="row">
-    <div class="col-md sponsorDiv s-1">
-      <a target-"_blank"="" href="https://ark.io/">
-        <img class="sponsor-image-1" src="assets/img/lastYearSponsors/arkLogo.png" alt="ark">
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md sponsorDiv s-col l">
-      <a target-"_blank"="" href="https://github.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/github.png" alt="github">
-      </a>
-    </div>
     <div class="col-md sponsorDiv s-col r">
-      <a target-"_blank"="" href="https://www.hackerearth.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/hackerearth.png" alt="hackerearth">
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md sponsorDiv s-col l">
-      <a target-"_blank"="" href="https://balsamiq.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/balsamiq.png" alt="balsamiq">
+      <a target-"_blank"="" href="https://www.stickergiant.com/">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/Sticker_Giant.svg" alt="Sticker Giant">
       </a>
     </div>
     <div class="col-md sponsorDiv s-col r">
       <a target-"_blank"="" href="http://www.genesisimagingservices.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/gislogo.png" alt="gis">
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md sponsorDiv s-col l">
-      <a target-"_blank"="" href="https://artofproblemsolving.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/AoPSLogo.png" alt="AoPS">
-      </a>
-    </div>
-    <div class="col-md sponsorDiv s-col r">
-      <a target-"_blank"="" href="https://www.jetbrains.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/jetbrains.png" alt="jerbrains">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/gislogo.png" alt="GIS">
       </a>
     </div>
   </div>
   <div class="row">
     <div class="col-md sponsorDiv s-col l">
       <a target-"_blank"="" href="http://get.tech/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/dottech.png" alt="techDomains">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/dottech.png" alt="DotTech Domains">
       </a>
     </div>
-    <div class="col-md sponsorDiv s-col r">
-      <a target-"_blank"="" href="http://princetonpi.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/princeton-pi-logo.png" alt="princetonPi">
-      </a>
-    </div>
-  </div>
-  <div class="row">
     <div class="col-md sponsorDiv s-col l">
-      <a target-"_blank"="" href="http://www.wolframalpha.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/wolframLogo.png" alt="wolfram">
-      </a>
-    </div>
-    <div class="col-md sponsorDiv s-col r">
-      <a target-"_blank"="" href="https://temboo.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/temboo-logo.png" alt="temboo">
+      <a target-"_blank"="" href="https://artofproblemsolving.com/">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/AoPS.svg" alt="AoPS">
       </a>
     </div>
   </div>
   <div class="row">
     <div class="col-md sponsorDiv s-col l">
       <a target-"_blank"="" href="http://mccaffreys.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/mcafferys.png" alt="mcafferys">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/mcafferys.png" alt="Mccafferys">
       </a>
     </div>
     <div class="col-md sponsorDiv s-col r">
       <a target-"_blank"="" href="https://desmos.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/desmos.png" alt="desmos">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/desmos.png" alt="Desmos">
       </a>
     </div>
   </div>
   <div class="row">
-    <div class="col-md sponsorDiv s-col lr">
-      <a target-"_blank"="" href="http://hackp.ac/mlh-stickermule-hackathon/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/stickermule.png" alt="stickermule">
+    <div class="col-md sponsorDiv s-col l">
+      <a target-"_blank"="" href="https://www.wolframalpha.com/">
+        <img class="sponsor-image-2" src="assets/img/sponsorLogos/wolfram_alpha.svg" alt="Wolfram Alpha">
       </a>
     </div>
     <div class="col-md sponsorDiv s-col r">
-      <a target-"_blank"="" href="https://www.idtech.com/">
-        <img class="sponsor-image-2" src="assets/img/lastYearSponsors/idtechLogo.png" alt="idtech">
-      </a>
     </div>
   </div>
 </div>
