@@ -32,7 +32,6 @@ html {
   padding-top: 5px;
   font-family: 'Rubik', sans-serif;
   font-size: 4.25rem;
-  font-weight: bold;
   /*padding-bottom: 1rem;*/
 }
 @media (min-width: 768px) {
@@ -51,7 +50,7 @@ html {
   font-family: 'Rubik', sans-serif;
   background: #007bff;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1em;
   padding: 15px 30px;
 }
@@ -83,9 +82,6 @@ html {
     padding-right: 92px;
   }
 }
-.nav-link{
-    font-weight: bold;
-}
 .register-button{
   padding-left: 15px;
 }
@@ -96,7 +92,7 @@ html {
 
 }
 
-.about-title{
+.about-text{
   font-family: 'Rubik', sans-serif;
   font-size:3.75rem;
   /*display:inline-block;*/
@@ -254,7 +250,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     display: none;
   }
 }
-@media (max-width: 980px){
+@media (max-width: 923px){
   .d-mmd-none{
     display: none;
   }
