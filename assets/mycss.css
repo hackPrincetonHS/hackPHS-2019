@@ -32,6 +32,7 @@ html {
   padding-top: 5px;
   font-family: 'Rubik', sans-serif;
   font-size: 4.25rem;
+  font-weight: bold;
   /*padding-bottom: 1rem;*/
 }
 @media (min-width: 768px) {
@@ -50,7 +51,7 @@ html {
   font-family: 'Rubik', sans-serif;
   background: #007bff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1em;
   padding: 15px 30px;
 }
@@ -82,6 +83,9 @@ html {
     padding-right: 92px;
   }
 }
+.nav-link{
+    font-weight: bold;
+}
 .register-button{
   padding-left: 15px;
 }
@@ -92,10 +96,14 @@ html {
 
 }
 
-.about-text{
+.about-title{
   font-family: 'Rubik', sans-serif;
   font-size:3.75rem;
   /*display:inline-block;*/
+}
+.about-text{
+    font-family: 'Rubik', sans-serif;
+    font-size:1.2rem;
 }
 
 /*--sponsors stuff--*/
@@ -169,7 +177,7 @@ padding-right: 5%;
 /*end sponsos stuff*/
 .section-about {
   padding-top: 50px;
-  background-color: #6BB9F0;
+  background-color: #9DBFFF;
   font-family: 'Roboto', sans-serif;
 }
 .section-cta{
