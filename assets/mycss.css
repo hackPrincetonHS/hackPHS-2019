@@ -211,6 +211,17 @@ padding-right: 5%;
   padding-bottom: 20px;
 }
 
+.faq-text{
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 444px) {
+  .faq-text{
+    text-align: left;
+  }
+}
+
 
 
 footer {
